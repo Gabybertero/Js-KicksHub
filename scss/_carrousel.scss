@@ -1,0 +1,47 @@
+.carousel {
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+
+    .carousel-item {
+        width: 100%;
+        height: auto;
+
+        .producto {
+            margin: 0 auto;
+            width: 70%;
+            max-width: none;
+            min-width: 100%;
+            display: inline;
+
+            @media all and (max-width: 450px) {
+                .producto {
+                    width: 100%;
+                }
+            }
+        }
+
+        .carouselP {
+            color: $negro;
+        }
+    }
+}
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+
+    h3 {
+        margin-top: 15px;
+    }
+
+    a img {
+        width: 150px;
+        height: 100%;
+        padding: 30px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,81 @@
+.contactoContent {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 20px;
+
+    .h3ContactoDiv {
+        .h3Contacto {
+            padding-left: 15px;
+            text-align: start;
+        }
+    }
+
+    .contactoForm {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-left: 40px;
+
+        .formulario {
+            align-items: center;
+            text-align: start;
+            justify-content: space-between;
+
+            label {
+                border: 1px solid $negro;
+                border-radius: 0;
+                padding: 2px;
+            }
+
+            .inputContacto {
+                width: 200px;
+            }
+        }
+    }
+}
+
+.contactoContentCarrito {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+
+    @media (max-width: 575px) {
+        flex-flow: column nowrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .column {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1;
+
+        @media (max-width: 575px) {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .contactoForm {
+            display: flex;
+            flex-flow: column nowrap;
+            padding-left: 40px;
+
+            .formulario {
+                align-items: center;
+                text-align: start;
+                justify-content: space-between;
+
+                label {
+                    border: 1px solid $negro;
+                    border-radius: 0;
+                    padding: 2px;
+                }
+
+                .inputContacto {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

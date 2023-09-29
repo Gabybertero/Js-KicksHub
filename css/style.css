@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding: 5px;
+}
+.header nav {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.header .navbar {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+.header .navbar .contenedor {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .header .navbar .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header .navbar .contenedor .logo img {
+  width: 100px;
+  height: auto;
+  transition: all 0.3s;
+}
+.header .navbar .contenedor .logo img:hover {
+  transform: scale(1.1);
+}
+.header .navbar .contenedor .divUl {
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+.header .navbar .contenedor .divUl .divNavbar {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-flow: row nowrap;
+}
+@media (max-width: 1000px) {
+  .header .navbar .contenedor .divUl .divNavbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header .navbar .contenedor .divUl .divNavbar .busqueda {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: right;
+  align-items: center;
+}
+.header .navbar .contenedor .divUl .divNavbar .busqueda .carrito {
+  height: auto;
+  width: 40px;
+  padding: 0 10px;
+}
+.header .navbar .contenedor .divUl .divLista {
+  width: auto;
+  height: auto;
+}
+.header .navbar .contenedor .divUl .divLista .lista {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .header .navbar .contenedor .divUl .divLista .lista {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header .navbar .contenedor .divUl .divLista .lista .navTitulo {
+  color: beige;
+}
+.header .navbar .contenedor .divUl .divLista .lista .navLi {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.3s;
+}
+.header .navbar .contenedor .divUl .divLista .lista .navLi:hover {
+  transform: scale(1.1);
+}
+.header .navbar .contenedor .divUl .divLista .lista .listaInfo ul li .itemInfo {
+  color: black;
+  transition: all 0.3s;
+}
+.header .navbar .contenedor .divUl .divLista .lista .listaInfo ul li .itemInfo:hover {
+  transform: scale(1.1);
+}
+
+.cajaTitulo {
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  background-color: firebrick;
+}
+.cajaTitulo .titulo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 5px 10px 5px;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  animation: animar-texto 2s infinite;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+@keyframes animar-texto {
+  0% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 5px;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
+.cajaTitulo .slogan {
+  display: flex;
+  color: beige;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px 15px 5px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: oblique;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.cajaTitulo .slogan:hover {
+  color: black;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(243, 199, 199);
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.content main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+}
+.content .paresDestacados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.carousel {
+  width: 50%;
+  height: auto;
+  margin: 10px auto;
+}
+.carousel .carousel-item {
+  width: 100%;
+  height: auto;
+}
+.carousel .carousel-item .producto {
+  margin: 0 auto;
+  width: 70%;
+  max-width: none;
+  min-width: 100%;
+  display: inline;
+}
+@media all and (max-width: 450px) {
+  .carousel .carousel-item .producto .producto {
+    width: 100%;
+  }
+}
+.carousel .carousel-item .carouselP {
+  color: black;
+}
+
+.marcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin-top: 20px;
+}
+.marcas h3 {
+  margin-top: 15px;
+}
+.marcas a img {
+  width: 150px;
+  height: 100%;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.comoComprar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-self: center;
+  align-items: center;
+  padding: 20px;
+}
+.comoComprar h2 {
+  justify-self: start;
+  padding-left: 50px;
+}
+.comoComprar .comoComprarContent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.comoComprar .comoComprarContent p {
+  text-align: start;
+  text-indent: 20px;
+}
+.comoComprar .comoComprarContent .imagenTutorial {
+  height: 500px;
+  width: 500px;
+}
+@media (max-width: 600px) {
+  .comoComprar .comoComprarContent .imagenTutorial {
+    width: auto;
+    height: auto;
+  }
+}
+.comoComprar .comoComprarContent .videoTutorial {
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .comoComprar .comoComprarContent .videoTutorial {
+    width: auto;
+    height: auto;
+  }
+}
+
+.contactoContent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.contactoContent .h3ContactoDiv .h3Contacto {
+  padding-left: 15px;
+  text-align: start;
+}
+.contactoContent .contactoForm {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 40px;
+}
+.contactoContent .contactoForm .formulario {
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+}
+.contactoContent .contactoForm .formulario label {
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 2px;
+}
+.contactoContent .contactoForm .formulario .inputContacto {
+  width: 200px;
+}
+
+.contactoContentCarrito {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+@media (max-width: 575px) {
+  .contactoContentCarrito {
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+  }
+}
+.contactoContentCarrito .column {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+}
+@media (max-width: 575px) {
+  .contactoContentCarrito .column {
+    padding: 10px;
+    text-align: center;
+  }
+}
+.contactoContentCarrito .column .contactoForm {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 40px;
+}
+.contactoContentCarrito .column .contactoForm .formulario {
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+}
+.contactoContentCarrito .column .contactoForm .formulario label {
+  border: 1px solid black;
+  border-radius: 0;
+  padding: 2px;
+}
+.contactoContentCarrito .column .contactoForm .formulario .inputContacto {
+  width: 200px;
+}
+
+@media (max-width: 575px) {
+  .footer {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.footer .logoFooter {
+  width: 100px;
+  height: auto;
+}
+@media (max-width: 870px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+  }
+  .footer h5 {
+    font-size: 15px;
+  }
+}
+
+.info .infoContent {
+  padding: 20px;
+}
+.info .infoContent .infoTitulo {
+  padding: 15px 5px;
+}
+.info .infoContent .nosotros .h3Nosotros {
+  padding: 15px 5px;
+}
+.info .infoContent .nosotros p {
+  text-indent: 40px;
+}
+.info .infoContent .guiaTalles {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.info .infoContent .guiaTalles .h3Guia {
+  padding: 15px 5px;
+  text-align: start;
+}
+.info .infoContent .guiaTalles .guiaTexto {
+  text-indent: 40px;
+}
+.info .infoContent .guiaTalles .guiaArchivo {
+  text-align: center;
+}
+.info .infoContent .politicaDevoluciones .h3Politica {
+  padding: 15px 5px;
+  text-align: start;
+}
+.info .infoContent .politicaDevoluciones .politicaTexto {
+  text-indent: 40px;
+}
+
+.contenedorPadre {
+  display: grid;
+  grid-template-areas: "nav card card card card info" "nav card card card card info" "nav card card card card info" "nav card card card card info" "nav footer footer footer footer info";
+  grid-template-columns: repeat(6, 2fr);
+  grid-template-rows: repeat(5, auto);
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  row-gap: 5px;
+  column-gap: 10px;
+  padding-top: 10px;
+}
+.contenedorPadre .navProductos {
+  grid-area: nav;
+}
+.contenedorPadre .navProductos .tituloProducto {
+  font-weight: bold;
+  padding-left: 15px;
+}
+.contenedorPadre .navProductos .categorias {
+  text-indent: 10px;
+  padding-left: 15px;
+}
+.contenedorPadre .navProductos .ulNavProductos {
+  list-style: none;
+}
+.contenedorPadre .navProductos .ulNavProductos li {
+  text-indent: 20px;
+}
+.contenedorPadre .navProductos .ulNavProductos li a {
+  text-decoration: none;
+  color: black;
+}
+.contenedorPadre .productos {
+  grid-area: card;
+}
+.contenedorPadre .productos .row div {
+  padding: 0px 10px 15px 10px;
+}
+.contenedorPadre .productos .card div a {
+  background-color: crimson;
+}
+.contenedorPadre .productos .card div p {
+  font-size: 15px;
+}
+.contenedorPadre .productos .card div h3 {
+  display: flex;
+  font-size: 20px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorPadre .footerProducto {
+  grid-area: footer;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 950px) {
+  .contenedorPadre .footerProducto {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+  }
+  .contenedorPadre .footerProducto h5 {
+    font-size: 15px;
+  }
+}
+.contenedorPadre .footerProducto .logoFooter {
+  width: 100px;
+  height: auto;
+}
+
+.simulador {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-radius: 2px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+.info {
+
+    .infoContent {
+        padding: 20px;
+
+        .infoTitulo {
+            padding: $paddingInfo;
+        }
+
+        .nosotros {
+            .h3Nosotros {
+                padding: $paddingInfo;
+            }
+
+            p {
+                text-indent: 40px;
+            }
+        }
+
+        .guiaTalles {
+            display: flex;
+            flex-flow: column nowrap;
+
+            .h3Guia {
+                padding: $paddingInfo;
+                text-align: start;
+            }
+
+            .guiaTexto {
+                text-indent: 40px;
+            }
+
+            .guiaArchivo {
+                text-align: center;
+            }
+        }
+
+        .politicaDevoluciones {
+            .h3Politica {
+                padding: $paddingInfo;
+                text-align: start;
+            }
+
+            .politicaTexto {
+                text-indent: 40px;
+            }
+        }
+    }
+}

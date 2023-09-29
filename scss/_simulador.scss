@@ -1,0 +1,28 @@
+.simulador {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-radius: 2px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}

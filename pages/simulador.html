@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMACIÓN | KICK'S HUB</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/Jordan color remove .png" type="image/x-icon">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body class="content">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="contenedor container-fluid">
+                <div class="divLogo">
+                    <a class="logo navbar-brand" href="../index.html"><img class="logoImagen"
+                            src="../img/Jordan color remove .png" alt="logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="divUl collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="divNavbar">
+                        <div class="divLista">
+                            <ul class="lista navbar-nav me-5 mb-2 mb-lg-0">
+                                <li class="navLi nav-item">
+                                    <a class="navTitulo nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="navLi nav-item">
+                                    <a class="navTitulo nav-link" href="productos.html">Productos</a>
+                                </li>
+                                <li class="navLi nav-item">
+                                    <a class="navTitulo nav-link" href="comocomprar.html">Cómo Comprar</a>
+                                </li>
+                                <li class="navLi listaInfo nav-item dropdown">
+                                    <a class="navTitulo nav-link dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Información
+                                    </a>
+                                    <ul class="ulInfo dropdown-menu">
+                                        <li><a class="itemInfo dropdown-item" href="informacion.html">Sobre Nosotros</a></li>
+                                        <li><a class="itemInfo dropdown-item" href="comocomprar.html">Cómo Comprar</a></li>
+                                        <li><a class="itemInfo dropdown-item" href="informacion.html">Guía de Talles</a></li>
+                                        <li><a class="itemInfo dropdown-item" href="informacion.html">Política de Devoluciones</a></li>
+                                        <li><a class="itemInfo dropdown-item" href="informacion.html">Preguntas Frecuentes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navLi nav-item">
+                                    <a class="navTitulo nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="busqueda">
+                            <a href="carrito.html"><img class="carrito" src="../img/carrito-removebg-preview (2).png" alt="carrito"></a>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="simulador">
+        <div class="simuladorContent">
+            <h2>Simulador de Talles</h2>
+            <label for="talle">Selecciona el tamaño en cm:</label>
+            <select id="talle">
+                <option value="35">22cm</option>   
+                <option value="36">23cm</option>   
+                <option value="37">24cm</option>  
+                <option value="38">25cm</option>   
+                <option value="39">26cm</option>   
+                <option value="40">27cm</option>   
+                <option value="41">28cm</option>   
+                <option value="42">29cm</option>   
+                <option value="43">30cm</option>
+                <option value="44">31cm</option>
+            </select>
+            <button onclick="calcularTalle()">Aceptar</button>
+            <p>Tu talle es: <span id="resultadoTalle"></span></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 my-auto border-top">
+                <div class="col mb-3">
+                    <a href="../index.html"
+                        class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <img src="../img/Jordan color remove .png" alt="logo" class="logoFooter">
+                    </a>
+                </div>
+
+                <div class="col mb-3">
+                    <p class="d-flex align-items-center mb-3 justify-content-right pt-4 text-body-secondary">© 2023
+                    </p>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Navegación</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="../index.html"
+                                class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="productos.html"
+                                class="nav-link p-0 text-body-secondary">Productos</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="comocomprar.html"
+                                class="nav-link p-0 text-body-secondary">Cómo
+                                Comprar</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="informacion.html" class="nav-link p-0 text-body-secondary">Información</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-body-secondary">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Información</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="informacion.html" class="nav-link p-0 text-body-secondary">Sobre
+                                Nosotros</a></li>
+                        <li class="nav-item mb-2"><a href="comocomprar.html"
+                                class="nav-link p-0 text-body-secondary">Cómo
+                                Comprar</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="informacion.html" class="nav-link p-0 text-body-secondary">Guía de
+                                Talles</a></li>
+                        <li class="nav-item mb-2"><a href="informacion.html" class="nav-link p-0 text-body-secondary">Política de
+                                Devoluciones</a></li>
+                        <li class="nav-item mb-2"><a href="informacion.html" class="nav-link p-0 text-body-secondary">Preguntas
+                                Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col mb-3">
+                    <h5>Contacto</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Teléfono:
+                                +54999999999</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Email:
+                                kickshub@contacto.com</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    
+    <script src="../src/simulador.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.comoComprar {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+
+    h2 {
+        justify-self: start;
+        padding-left: 50px;
+    }
+
+    .comoComprarContent {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            text-align: start;
+            text-indent: 20px;
+        }
+
+        .imagenTutorial {
+            height: 500px;
+            width: 500px;
+
+            @media (max-width: 600px) {
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .videoTutorial {
+            padding: 10px;
+
+            @media (max-width: 600px) {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}
